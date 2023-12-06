@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <a href="./about.html"> <button class="authorisation_button">SIGN IN</button></a>
+        <div class="modalWindow">
+            <i class="fa-solid fa-crown"></i>
+            <i class="fa-solid fa-piggy-bank"></i>
+            <h1>THANK YOU</h1>
+            <p class="text1">for joining our team</p>
+            <p class="text2">together we will change the world</p>
+            <button class="close-modalWindow">CLOSE</button>
+        </div>
+
+        <div class="container">
+            <div class="card_registr">
+                <div class="registr_wrapper">
+                    <div class="registr-text1">Отримати свій унікальний картки</div>
+                    <button class="button-1" onclick="generateRandomNumbers()">Отримати</button>
+                    <div class="box-main">
+                        <div class="box1">
+                            <p class="registr-text3">Отримати CVV-код</p>
+                            <button class="button-2" onclick="generateRandomNumbersCV()">Отримати</button>
+                        </div>
+                        <div class="box2">
+                            <p class="registr-text4">Дата отримання</p>
+                            <input class="input_date-block" onclick="dateType()" type="date">
+                        </div>
+                    </div>
+                    <p class="registr-text5">Name</p>
+                    <input class="inputName" type="text" onclick="userDataType()" placeholder="Введіть ваше ім'я">
+                    <p class="registr-text6">Surname</p>
+                    <input type="text" class="inputSurname" onclick="userDataType()" placeholder="введіть ваше призвіще">
+                    <p class="registr-text7">Lorem ipsum dolor sit amet consee.</p>
+                    <p class="registr-text8">Так ознайомлен(-на)</p>
+                    <input type="checkbox" class="myCheckbox">
+                    <button class="checkButton" onclick="validateData()">Створити картку</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card_box">
+                    <p class="Credit-card_name">Credit Card</p>
+                    <img src="card.png" alt="" />
+                </div>
+                <div class="card_number"></div>
+                <div class="card_info">
+                    <div class="card_cv"></div>
+                    <div class="card_data" id="output"></div>
+                </div>
+                <div class="user_info">
+                    <div class="card_name"></div>
+                    <div class="card_surname"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/6d7cb93199.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
